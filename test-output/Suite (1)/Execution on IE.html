@@ -1,0 +1,416 @@
+<html>
+<head>
+<title>TestNG:  Execution on IE</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Execution on IE</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 29 17:20:51 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>980 seconds (980543 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense_with_PDF_Receipt.CreateBusinessExpensewithPDFReceipt()'><b>CreateBusinessExpensewithPDFReceipt</b><br>Test class: testCases_IE.Create_Business_Expense_with_PDF_Receipt<br/>
+<a href="#Output-1028259121" onClick='toggleBox("Output-1028259121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1028259121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1028259121">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Business_Expense_with_PDF_Receipt.CreateBusinessExpensewithPDFReceipt<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense_with_PDF_Receipt<br/>
+Test Status: Failed<br/>
+About to begin executing Create_Business_Expense_with_PDF_Receipt.afterMethod<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.47 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;AQQA-02&apos;, ip: &apos;192.168.10.115&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16712/, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 3e568c86-04c5-434e-971f-ef39f6d83836
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at appModules.BusinessExpWithReceipt_Action$BusinessExpWithReceiptPDF_Action.Execute(BusinessExpWithReceipt_Action.java:18)
+	at testCases_IE.Create_Business_Expense_with_PDF_Receipt.CreateBusinessExpensewithPDFReceipt(Create_Business_Expense_with_PDF_Receipt.java:57)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1028259121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1028259121'><pre>org.openqa.selenium.ElementNotVisibleException: Cannot click on element (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8.47 seconds
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;AQQA-02&apos;, ip: &apos;192.168.10.115&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:16712/, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 3e568c86-04c5-434e-971f-ef39f6d83836
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at appModules.BusinessExpWithReceipt_Action$BusinessExpWithReceiptPDF_Action.Execute(BusinessExpWithReceipt_Action.java:18)
+	at testCases_IE.Create_Business_Expense_with_PDF_Receipt.CreateBusinessExpensewithPDFReceipt(Create_Business_Expense_with_PDF_Receipt.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>15</td>
+<td>testCases_IE.Create_Business_Expense_with_PDF_Receipt@6adede5</td></tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense_with_PNG_Receipt.CreateBusinessExpensewithPNGReceipt()'><b>CreateBusinessExpensewithPNGReceipt</b><br>Test class: testCases_IE.Create_Business_Expense_with_PNG_Receipt<br/>
+<a href="#Output-1292325833" onClick='toggleBox("Output-1292325833", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1292325833" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1292325833">
+Completed executing Create_Business_Expense_with_PNG_Receipt.CreateBusinessExpensewithPNGReceipt<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense_with_PNG_Receipt<br/>
+Test Status: Failed<br/>
+About to begin executing Create_Business_Expense_with_PNG_Receipt.afterMethod<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with id == LogOut (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;AQQA-02&apos;, ip: &apos;192.168.10.115&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14842/, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 5e5b9d75-63b5-4a48-b42e-a67896329828
+*** Element info: {Using=id, value=LogOut}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at pageObjects.Home_Page.lnk_LogOut(Home_Page.java:18)
+	at appModules.SignIn_Action.Execute(SignIn_Action.java:28)
+	at testCases_IE.Create_Business_Expense_with_PNG_Receipt.CreateBusinessExpensewithPNGReceipt(Create_Business_Expense_with_PNG_Receipt.java:56)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292325833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292325833'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with id == LogOut (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.24 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;AQQA-02&apos;, ip: &apos;192.168.10.115&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{browserAttachTimeout=0, ie.enableFullPageScreenshot=true, enablePersistentHover=true, ie.forceCreateProcessApi=false, ie.forceShellWindowsApi=false, pageLoadStrategy=normal, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, version=11, platform=WINDOWS, nativeEvents=true, ie.ensureCleanSession=false, elementScrollBehavior=0, ie.browserCommandLineSwitches=, requireWindowFocus=false, browserName=internet explorer, initialBrowserUrl=http://localhost:14842/, javascriptEnabled=true, ignoreProtectedModeSettings=true, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss}]
+Session ID: 5e5b9d75-63b5-4a48-b42e-a67896329828
+*** Element info: {Using=id, value=LogOut}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at pageObjects.Home_Page.lnk_LogOut(Home_Page.java:18)
+	at appModules.SignIn_Action.Execute(SignIn_Action.java:28)
+	at testCases_IE.Create_Business_Expense_with_PNG_Receipt.CreateBusinessExpensewithPNGReceipt(Create_Business_Expense_with_PNG_Receipt.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+</pre></div></td>
+<td>24</td>
+<td>testCases_IE.Create_Business_Expense_with_PNG_Receipt@2d928643</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense.CreateBusinessExpense()'><b>CreateBusinessExpense</b><br>Test class: testCases_IE.Create_Business_Expense<br/>
+<a href="#Output-651698411" onClick='toggleBox("Output-651698411", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-651698411" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-651698411">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Business_Expense.CreateBusinessExpense<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Business_Expense.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>testCases_IE.Create_Business_Expense@73846619</td></tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense_EntertainmentClient.CreateBusinessExpense_EntertainmentClient()'><b>CreateBusinessExpense_EntertainmentClient</b><br>Test class: testCases_IE.Create_Business_Expense_EntertainmentClient<br/>
+<a href="#Output-1681993012" onClick='toggleBox("Output-1681993012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681993012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681993012">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Business_Expense_EntertainmentClient.CreateBusinessExpense_EntertainmentClient<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense_EntertainmentClient<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Business_Expense_EntertainmentClient.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>testCases_IE.Create_Business_Expense_EntertainmentClient@29ca901e</td></tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense_HotelAndLodging.CreateBusinessExpense_HotelAndLodging()'><b>CreateBusinessExpense_HotelAndLodging</b><br>Test class: testCases_IE.Create_Business_Expense_HotelAndLodging<br/>
+<a href="#Output-1171672359" onClick='toggleBox("Output-1171672359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1171672359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1171672359">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Business_Expense_HotelAndLodging.CreateBusinessExpense_HotelAndLodging<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense_HotelAndLodging<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Business_Expense_HotelAndLodging.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>65</td>
+<td>testCases_IE.Create_Business_Expense_HotelAndLodging@5649fd9b</td></tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense_Mileage.CreateBusinessExpense_Mileage()'><b>CreateBusinessExpense_Mileage</b><br>Test class: testCases_IE.Create_Business_Expense_Mileage<br/>
+<a href="#Output-13001549" onClick='toggleBox("Output-13001549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13001549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13001549">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Business_Expense_Mileage.CreateBusinessExpense_Mileage<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense_Mileage<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Business_Expense_Mileage.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>testCases_IE.Create_Business_Expense_Mileage@4bec1f0c</td></tr>
+<tr>
+<td title='testCases_IE.Create_Business_Expense_with_PDF_PNG_Receipt.CreateBusinessExpensewithPDFandPNGReceipt()'><b>CreateBusinessExpensewithPDFandPNGReceipt</b><br>Test class: testCases_IE.Create_Business_Expense_with_PDF_PNG_Receipt<br/>
+<a href="#Output-40736485" onClick='toggleBox("Output-40736485", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-40736485" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-40736485">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Business_Expense_with_PDF_PNG_Receipt.CreateBusinessExpensewithPDFandPNGReceipt<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Business_Expense_with_PDF_PNG_Receipt<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Business_Expense_with_PDF_PNG_Receipt.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>122</td>
+<td>testCases_IE.Create_Business_Expense_with_PDF_PNG_Receipt@5025a98f</td></tr>
+<tr>
+<td title='testCases_IE.Create_Personal_Expense.CreatePeronalExpense()'><b>CreatePeronalExpense</b><br>Test class: testCases_IE.Create_Personal_Expense<br/>
+<a href="#Output-165850513" onClick='toggleBox("Output-165850513", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-165850513" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-165850513">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Personal_Expense.CreatePeronalExpense<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Personal_Expense<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Personal_Expense.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>75</td>
+<td>testCases_IE.Create_Personal_Expense@49993335</td></tr>
+<tr>
+<td title='testCases_IE.Create_Personal_Expense_with_PDF_Receipt.CreatePersonalExpensewithPDFReceipt()'><b>CreatePersonalExpensewithPDFReceipt</b><br>Test class: testCases_IE.Create_Personal_Expense_with_PDF_Receipt<br/>
+<a href="#Output-426052262" onClick='toggleBox("Output-426052262", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-426052262" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-426052262">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Personal_Expense_with_PDF_Receipt.CreatePersonalExpensewithPDFReceipt<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Personal_Expense_with_PDF_Receipt<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Personal_Expense_with_PDF_Receipt.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>91</td>
+<td>testCases_IE.Create_Personal_Expense_with_PDF_Receipt@20322d26</td></tr>
+<tr>
+<td title='testCases_IE.Create_Personal_Expense_with_PDF_PNG_Receipt.CreatePersonalExpensewithPDFandPNGReceipt()'><b>CreatePersonalExpensewithPDFandPNGReceipt</b><br>Test class: testCases_IE.Create_Personal_Expense_with_PDF_PNG_Receipt<br/>
+<a href="#Output-1750120280" onClick='toggleBox("Output-1750120280", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1750120280" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1750120280">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Personal_Expense_with_PDF_PNG_Receipt.CreatePersonalExpensewithPDFandPNGReceipt<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Personal_Expense_with_PDF_PNG_Receipt<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Personal_Expense_with_PDF_PNG_Receipt.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>124</td>
+<td>testCases_IE.Create_Personal_Expense_with_PDF_PNG_Receipt@64bfbc86</td></tr>
+<tr>
+<td title='testCases_IE.Create_Personal_Expense_with_PNG_Receipt.CreatePersonalExpensewithPNGReceipt()'><b>CreatePersonalExpensewithPNGReceipt</b><br>Test class: testCases_IE.Create_Personal_Expense_with_PNG_Receipt<br/>
+<a href="#Output-364389956" onClick='toggleBox("Output-364389956", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-364389956" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-364389956">
+SignIn Action is successfully perfomred<br/>
+Completed executing Create_Personal_Expense_with_PNG_Receipt.CreatePersonalExpensewithPNGReceipt<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Create_Personal_Expense_with_PNG_Receipt<br/>
+Test Status: Pass<br/>
+About to begin executing Create_Personal_Expense_with_PNG_Receipt.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>98</td>
+<td>testCases_IE.Create_Personal_Expense_with_PNG_Receipt@192b07fd</td></tr>
+<tr>
+<td title='testCases_IE.Login_to_SOLO.LoginLogout()'><b>LoginLogout</b><br>Test class: testCases_IE.Login_to_SOLO<br/>
+<a href="#Output-1677590477" onClick='toggleBox("Output-1677590477", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1677590477" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1677590477">
+SignIn Action is successfully perfomred<br/>
+Completed executing Login_to_SOLO.LoginLogout<br/>
+TestName = null<br/>
+Test Method resides in testCases_IE.Login_to_SOLO<br/>
+Test Status: Pass<br/>
+About to begin executing Login_to_SOLO.afterMethod<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>testCases_IE.Login_to_SOLO@3159c4b8</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\Users\Priyanka\workspace\New folder\SoloExpenses\.metadata\.plugins\org.eclipse.jdt.core

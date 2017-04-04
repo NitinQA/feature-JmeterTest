@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Case Execution on Browser - Mozilla]">
+  <parameter name="browserType" value="Mozilla"/>
+  <listeners>
+    <listener class-name="utility.Listener"/>
+  </listeners>
+  <test name="Create Expense Test Cases(failed)">
+    <classes>
+      <class name="testCases_Mozilla.TC002_Create_Business_Expense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="CreateBusinessExpense"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Mozilla.TC002_Create_Business_Expense -->
+      <class name="testCases_Mozilla.TC009_Create_Personal_Expense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="CreatePeronalExpense"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Mozilla.TC009_Create_Personal_Expense -->
+      <class name="testCases_Mozilla.TC001_Login_to_SOLO">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="LoginLogout"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Mozilla.TC001_Login_to_SOLO -->
+    </classes>
+  </test> <!-- Create Expense Test Cases(failed) -->
+</suite> <!-- Failed suite [Test Case Execution on Browser - Mozilla] -->

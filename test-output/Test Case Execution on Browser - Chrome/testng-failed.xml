@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Case Execution on Browser - Chrome]">
+  <parameter name="browserType" value="Chrome"/>
+  <listeners>
+    <listener class-name="utility.Listener"/>
+  </listeners>
+  <test name="Create Expense Test Cases(failed)">
+    <classes>
+      <class name="testCases_Chrome.TC002_Create_Business_Expense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC002_Create_Business_Expense -->
+      <class name="testCases_Chrome.TC006_Create_Business_Expense_with_PDF_Receipt">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC006_Create_Business_Expense_with_PDF_Receipt -->
+      <class name="testCases_Chrome.TC010_Create_Personal_Expense_with_PDF_Receipt">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC010_Create_Personal_Expense_with_PDF_Receipt -->
+      <class name="testCases_Chrome.TC009_Create_Personal_Expense">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC009_Create_Personal_Expense -->
+      <class name="testCases_Chrome.TC012_Create_Personal_Expense_with_PDF_PNG_Receipt">
+        <methods>
+          <include name="CreatePersonalExpensewithPDFandPNGReceipt"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC012_Create_Personal_Expense_with_PDF_PNG_Receipt -->
+      <class name="testCases_Chrome.TC011_Create_Personal_Expense_with_PNG_Receipt">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC011_Create_Personal_Expense_with_PNG_Receipt -->
+      <class name="testCases_Chrome.TC007_Create_Business_Expense_with_PNG_Receipt">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC007_Create_Business_Expense_with_PNG_Receipt -->
+      <class name="testCases_Chrome.TC008_Create_Business_Expense_with_PDF_PNG_Receipt">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC008_Create_Business_Expense_with_PDF_PNG_Receipt -->
+      <class name="testCases_Chrome.TC001_Login_to_SOLO">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases_Chrome.TC001_Login_to_SOLO -->
+    </classes>
+  </test> <!-- Create Expense Test Cases(failed) -->
+</suite> <!-- Failed suite [Test Case Execution on Browser - Chrome] -->

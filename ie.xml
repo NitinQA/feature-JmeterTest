@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Execution on IE">
+
+<parameter name="browserType" value="IE"/>
+
+<listeners>
+
+	<listener class-name="utility.Listener"/>
+
+</listeners>
+  <test name="Create Expense Test Cases">
+    <classes>
+    	<class name="testCases_IE.Login_to_SOLO"/>
+    	<class name="testCases_IE.Create_Business_Expense"/>
+    	<class name="testCases_Mozilla.TC003_Create_Business_Expense_Mileage"/>
+    	<class name="testCases_Mozilla.TC004_Create_Business_Expense_EntertainmentClient"/>
+    	<class name="testCases_Mozilla.TC005_Create_Business_Expense_HotelAndLodging"/>
+    	<class name="testCases_Mozilla.TC006_Create_Business_Expense_with_PDF_Receipt"/>
+    	<class name="testCases_Mozilla.TC007_Create_Business_Expense_with_PNG_Receipt"/>
+    	<class name="testCases_Mozilla.TC008_Create_Business_Expense_with_PDF_PNG_Receipt"/>
+    	<class name="testCases_Mozilla.TC009_Create_Personal_Expense"/>
+    	<class name="testCases_Mozilla.TC010_Create_Personal_Expense_with_PDF_Receipt"/>
+    	<class name="testCases_Mozilla.TC011_Create_Personal_Expense_with_PNG_Receipt"/>
+    	<class name="testCases_Mozilla.TC012_Create_Personal_Expense_with_PDF_PNG_Receipt"/>
+    	
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

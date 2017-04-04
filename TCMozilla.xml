@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Case Execution on Browser - Mozilla">
+
+<parameter name="browserType" value="Mozilla"/>
+
+<listeners>
+
+	<listener class-name="utility.Listener"/>
+
+</listeners>
+
+  <test name="Create Expense Test Cases">
+    <classes>
+      	<class name="testCases_Mozilla.TC001_Login_to_SOLO"/>
+    	<class name="testCases_Mozilla.TC002_Create_Business_Expense"/>
+    	<class name="testCases_Mozilla.TC009_Create_Personal_Expense"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
