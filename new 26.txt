@@ -1,0 +1,56 @@
+Hi Nick 
+
+You are invited to join K.G.F, and submit expenses for approval and/or approve employee expenses on line. Please download the mobile application 
+
+SOLO Expenses on iOS | SOLO Expenses on Android
+ <logo>					<logo>
+
+
+Please login with these credentials: 
+
+Email ID:
+nickjonasapp@yopmail.com
+Temporary Password:
+bottle@234
+
+To reset temporary password, click here. 
+
+If clicking the link above does not work, please copy and paste the URL in a new browser window instead: 
+https://app.soloexpenses.com/Account/ResetPassword?regId=NgAyADIANgA1AA==&fpId=a6752297-27fb-421b-816d-9d1c4a992688
+
+Thank you for choosing Solo Expenses. 
+
+
+
+Move icon(button) to top
+Seacrh and scroll for approver dropdowmn
+Vehicle type - toggle(enlarged and green)
+Filters should have All, by default
+Search - Code, email, name
+
+Attended a discussion with Sunil on YBL screens, claimant screens and FFL users story
+Had multiple discussion with gagandeep on Screens a
+Attended a demo on manage employee
+had a dsicussion with balkar on Org settoing screens which he is working right mnow
+Worked on wizrad pahse 2 user story on update, is completed ..org setting user user story 
+
+a.)	10822: (no expense save)
+
+b.)	10818: done
+c) 10821 : reopen
+10819
+
+
+11993 - shilesh
+11994 - dolly and asif
+
+export the csv with 4 column, Date - Name of claimant, category, amount, 
+Rationalisation -web shilesh
+mobiel - dolly & asif
+
+YBL- shilesh
+
+
+
+
+
