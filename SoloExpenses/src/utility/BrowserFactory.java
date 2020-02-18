@@ -10,7 +10,7 @@ public class BrowserFactory {
 	 public static WebDriver driver;
 	public static void startApplication() 
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nehadadwal\\eclipse-workspace\\SoloExpenses\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nehadadwal\\git\\Automation_Test\\SoloExpenses\\Drivers\\chromedriver.exe");
 		 
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();

@@ -5,17 +5,22 @@ import org.testng.annotations.BeforeTest;
 
 import com.ExpenseOnDemand.utility.*;
 
-public class LoginTestCase {
+public class LoginTestCase extends LoginPage{
 
-	@BeforeTest
+	
 	 
 	
-	public static void main(String[] args) throws IOException, InterruptedException {
+	public static void main(String[] args) {
 		
-		LoginPage readdata=new LoginPage();
+		LoginTestCase readdata=new LoginTestCase();
 		readdata.chromeBrowser();
 		readdata.appUrl();
-		readdata.loginCredentials();
+		try {
+			readdata.loginCredentials();
+		} catch (IOException | InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	
 

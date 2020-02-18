@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Autuomatio">
+<test name="Practise xml Template">
+
+
+<classes>
+
+<class name="testpackage.AssertTest"/>
+<class name="testpackage.InvocationCount"/>
+<class name="testpackage.PractiseTestng"/>
+<class name="testpackage.TestNGBasics"/>
+</classes>
+
+
+</test>
+
+</suite>

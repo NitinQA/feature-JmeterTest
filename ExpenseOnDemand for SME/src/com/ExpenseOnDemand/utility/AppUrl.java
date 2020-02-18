@@ -9,11 +9,11 @@ public class AppUrl extends BrowserFactory{
 		
 	}
 
-	public static void main(String[] args) {
-		AppUrl applaunch=new AppUrl();
-		applaunch.ieBrowser();
-		applaunch.appUrl();
-
-	}
+	/*
+	 * public static void main(String[] args) { AppUrl applaunch=new AppUrl();
+	 * applaunch.ieBrowser(); applaunch.appUrl();
+	 * 
+	 * }
+	 */
 
 }
