@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-02-17T17:05:42 IST" name="Default suite" finished-at="2020-02-17T17:06:02 IST" duration-ms="20261">
+    <groups>
+    </groups>
+    <test started-at="2020-02-17T17:05:42 IST" name="Default test" finished-at="2020-02-17T17:06:02 IST" duration-ms="20261">
+      <class name="com.ExpenseOnDemand.utility.ProdLogin">
+        <test-method signature="chromeBrowser()[pri:0, instance:com.ExpenseOnDemand.utility.ProdLogin@f8c1ddd]" started-at="2020-02-17T17:05:42 IST" name="chromeBrowser" finished-at="2020-02-17T17:05:52 IST" duration-ms="10538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeBrowser -->
+        <test-method signature="firefoxBrowser()[pri:0, instance:com.ExpenseOnDemand.utility.ProdLogin@f8c1ddd]" started-at="2020-02-17T17:05:52 IST" name="firefoxBrowser" finished-at="2020-02-17T17:06:00 IST" duration-ms="7573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefoxBrowser -->
+        <test-method signature="ieBrowser()[pri:0, instance:com.ExpenseOnDemand.utility.ProdLogin@f8c1ddd]" started-at="2020-02-17T17:06:00 IST" name="ieBrowser" finished-at="2020-02-17T17:06:02 IST" duration-ms="2105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ieBrowser -->
+      </class> <!-- com.ExpenseOnDemand.utility.ProdLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
