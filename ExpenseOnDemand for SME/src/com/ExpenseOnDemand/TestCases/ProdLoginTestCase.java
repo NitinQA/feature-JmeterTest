@@ -8,8 +8,14 @@ public class ProdLoginTestCase extends ProdLogin {
 	public static void main(String[] args) {
 
 		ProdLoginTestCase prodlogin=new ProdLoginTestCase();
-		prodlogin.chromeBrowser();
+		
+		
+		prodlogin.launchBrowser("chrome");
+		
+		
 		prodlogin.prodUrl();
+		
+		
 		try {
 			prodlogin.loginCredentials();
 		} catch (IOException | InterruptedException e) {
