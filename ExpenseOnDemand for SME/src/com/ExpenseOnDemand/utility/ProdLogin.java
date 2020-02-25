@@ -35,8 +35,10 @@ public class ProdLogin extends ProdUrl{
 	}
 
 	public ArrayList<String> readExcel(int colNo)throws IOException {
+		String filepath=System.getProperty("user.dir");
 
-		FileInputStream fis=new FileInputStream("C:\\Users\\nehadadwal\\eclipse-workspace\\ExpenseOnDemand for SME\\ExcelFiles\\prodcred.xlsx");
+
+		FileInputStream fis=new FileInputStream(filepath+"\\ExcelFiles\\prodcred.xlsx");
 
 
 		XSSFWorkbook wb=new XSSFWorkbook(fis);
