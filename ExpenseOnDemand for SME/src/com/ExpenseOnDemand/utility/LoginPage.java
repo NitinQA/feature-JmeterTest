@@ -17,7 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class LoginPage extends AppUrl{
 
-	public void loginCredentials() throws IOException, InterruptedException
+	public static void loginCredentials() throws IOException, InterruptedException
 	{
 		ArrayList<String> username= readExcel(0);
 		ArrayList<String> password=readExcel(1);
@@ -34,7 +34,7 @@ public class LoginPage extends AppUrl{
 		}
 	}
 
-	public ArrayList<String> readExcel(int colNo)throws IOException {
+	public static ArrayList<String> readExcel(int colNo)throws IOException {
 
 		FileInputStream fis=new FileInputStream("C:\\Users\\nehadadwal\\git\\Automation_Test\\ExpenseOnDemand for SME\\ExcelFiles\\credentials.xlsx");
 

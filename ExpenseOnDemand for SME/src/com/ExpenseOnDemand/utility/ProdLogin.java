@@ -11,9 +11,10 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 
-
+@Test
 public class ProdLogin extends ProdUrl{
 
 	public void loginCredentials() throws IOException, InterruptedException

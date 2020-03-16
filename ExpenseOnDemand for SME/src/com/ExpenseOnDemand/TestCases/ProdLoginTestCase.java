@@ -10,7 +10,7 @@ public class ProdLoginTestCase extends ProdLogin {
 		ProdLoginTestCase prodlogin=new ProdLoginTestCase();
 		
 		
-		prodlogin.launchBrowser("chrome");
+		prodlogin.ieBrowser();
 		
 		
 		prodlogin.prodUrl();
