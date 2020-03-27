@@ -15,23 +15,24 @@ public class AssertTest {
 	@BeforeMethod
 	public void launchBrowser()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nehadadwal\\git\\Automation_Test\\SoloExpenses\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Neha Dadwal\\Selenium Files\\chromedriver_win32\\chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.expenseondemand.com/");
+		driver.get("http://newqa.soloexpenses.com/login");
 	}
 
 
 
 
-	@Test
+	@Test(priority=1)
 	public void titleTest()
 	{
 		String title=driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals(title, "Expense Management Software | Expense Management System");
+		
 	}
-	@Test
+	@Test(priority=2)
 	public void chkAssert()
 	{
 		boolean b=driver.findElement(By.className("solo-logo")).isDisplayed();
