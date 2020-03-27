@@ -13,6 +13,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 
 public class NewLogin extends AppUrl{
+	
+	public static String Password="Aa123456";
+	public static String NewPassword="Aa@123456";
 
 	public static void loginCredentials() //throws IOException, InterruptedException
 	{
@@ -23,7 +26,12 @@ public class NewLogin extends AppUrl{
 		*/	driver.findElement(By.id("eMail")).clear();
 			driver.findElement(By.id("eMail")).sendKeys("solomar02@yopmail.com");
 			driver.findElement(By.id("password")).clear();
-			driver.findElement(By.id("password")).sendKeys("Aa@123456");
+			//To check entering password through string variable
+			
+			
+			driver.findElement(By.id("password")).sendKeys(NewPassword);
+			//static Data
+			//driver.findElement(By.id("password")).sendKeys("Aa123456");
 			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 			try {
 				Thread.sleep(10000);
@@ -31,6 +39,10 @@ public class NewLogin extends AppUrl{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		/*
+		 * if { Click succesfukll } else {
+		 * driver.findElement(By.id("password")).sendKeys(Password); }
+		 */
 			
 			
 		/*
@@ -43,7 +55,9 @@ public class NewLogin extends AppUrl{
 		}
 	public static void logoutApp()
 	{
-		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(4) > a > i")).click();
+		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(3) > a > i")).click();
+	
+		
 				 driver.findElement(By.xpath("//span[contains(text(),'Logout')]")).click();
 	}
 	public static void orgSet()
@@ -81,8 +95,9 @@ public class NewLogin extends AppUrl{
 	  lg.logoutApp();
 	  
 	  }
-	 
 }
+	 
+
 	/*
 	 * public static void getTtl() { String title=driver.getTitle();
 	 * System.out.println(title);

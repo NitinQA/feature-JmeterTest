@@ -17,7 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class LoginPage extends AppUrl{
 
-	public static void loginCredentials() throws IOException, InterruptedException
+	public static void loginCred() throws IOException, InterruptedException
 	{
 		ArrayList<String> username= readExcel(0);
 		ArrayList<String> password=readExcel(1);

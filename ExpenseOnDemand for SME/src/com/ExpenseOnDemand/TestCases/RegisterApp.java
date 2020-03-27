@@ -18,7 +18,7 @@ public class RegisterApp extends AppUrl {
 		driver.findElement(By.id("fName")).click();
 		driver.findElement(By.id("fName")).sendKeys("solo");
 		driver.findElement(By.id("eMail")).click();
-		driver.findElement(By.id("eMail")).sendKeys("soloauto0105@yopmail.com");
+		driver.findElement(By.id("eMail")).sendKeys("soloauto015@yopmail.com");
 
 		driver.findElement(By.cssSelector("body > app > section > ng-component > div > div.container-fluid > div > div > div.row > div.col-md-7 > div > div:nth-child(2) > form > div > div > div.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12.no-padding-left-right.mx-auto.text-center > button"
 						)).click(); 
@@ -100,9 +100,16 @@ public class RegisterApp extends AppUrl {
 		e.printStackTrace();
 	}
 	driver.findElement(By.xpath("//button[@type='submit']")).click();
+	
+	
+	try {
+		Thread.sleep(6000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
-	
-	
+	}
+}
 	
 
 
@@ -113,4 +120,4 @@ public class RegisterApp extends AppUrl {
 	 * rg.chromeBrowser(); rg.appUrl(); rg.RegisterApp(); }
 	 */
 
-}
+

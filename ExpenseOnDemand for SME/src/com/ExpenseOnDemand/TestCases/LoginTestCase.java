@@ -15,12 +15,11 @@ public class LoginTestCase extends LoginPage{
 		LoginTestCase readdata=new LoginTestCase();
 		//readdata.launchBrowser("Chrome");
 		readdata.appUrl();
-		try {
-			readdata.loginCredentials();
-		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * try { readdata.loginCredentials(); } catch (IOException |
+		 * InterruptedException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); }
+		 */
 		
 	
 
