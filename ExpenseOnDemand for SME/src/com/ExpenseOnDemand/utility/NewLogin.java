@@ -34,7 +34,7 @@ public class NewLogin extends AppUrl{
 			//driver.findElement(By.id("password")).sendKeys("Aa123456");
 			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 			try {
-				Thread.sleep(10000);
+				Thread.sleep(15000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -56,8 +56,14 @@ public class NewLogin extends AppUrl{
 	public static void logoutApp()
 	{
 		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(3) > a > i")).click();
-	
 		
+	
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 				 driver.findElement(By.xpath("//span[contains(text(),'Logout')]")).click();
 	}
 	public static void orgSet()

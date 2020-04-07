@@ -11,8 +11,8 @@ public class ChangePassword extends NewLogin{
 	{
 
 		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(3) > a > i")).click();
-
-		try { Thread.sleep(2000); } catch (InterruptedException e) { //TODO		  Auto-generated catch block
+		
+		try { Thread.sleep(10000); } catch (InterruptedException e) { //TODO		  Auto-generated catch block
 			e.printStackTrace(); }
 
 
@@ -31,6 +31,7 @@ public class ChangePassword extends NewLogin{
 		driver.switchTo().window(MainWindow);
 
 		driver.findElement(By.cssSelector("#exisitingPassword")).click();
+		
 		//driver.findElement(By.id("exisitingPassword")).clear();
 		driver.findElement(By.id("exisitingPassword")).sendKeys(NewLogin.NewPassword);
 		//driver.findElement(By.id("exisitingPassword")).sendKeys("Aa123456");
@@ -118,6 +119,8 @@ public class ChangePassword extends NewLogin{
 		password.appUrl();
 		password.loginCredentials();
 		password.setPasswordOne();
+		password.setPasswordTwo();
+		
 	}
 
 }
