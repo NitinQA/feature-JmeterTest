@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-24T17:29:13 IST" name="Suite1" finished-at="2020-02-24T17:29:33 IST" duration-ms="20118">
+  <suite started-at="2020-03-16T11:30:11 IST" name="Default suite" finished-at="2020-03-16T11:31:24 IST" duration-ms="73696">
     <groups>
     </groups>
-    <test started-at="2020-02-24T17:29:13 IST" name="Test on firefox" finished-at="2020-02-24T17:29:33 IST" duration-ms="20118">
-      <class name="com.ExpenseOnDemand.utility.BrowserFactory">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.ExpenseOnDemand.utility.BrowserFactory@7f1302d6]" started-at="2020-02-24T17:29:13 IST" name="launchBrowser" finished-at="2020-02-24T17:29:33 IST" duration-ms="20098" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2020-03-16T11:30:11 IST" name="Default test" finished-at="2020-03-16T11:31:24 IST" duration-ms="73696">
+      <class name="com.ExpenseOnDemand.TestCases.RegisterClass">
+        <test-method is-config="true" signature="browser()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:30:11 IST" name="browser" finished-at="2020-03-16T11:30:18 IST" duration-ms="7010" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-      </class> <!-- com.ExpenseOnDemand.utility.BrowserFactory -->
-    </test> <!-- Test on firefox -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:30:18 IST" name="appLaunch" finished-at="2020-03-16T11:30:31 IST" duration-ms="13393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="RegisterUser()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:30:31 IST" name="RegisterUser" finished-at="2020-03-16T11:31:20 IST" duration-ms="48628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUser -->
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:31:20 IST" name="appLaunch" finished-at="2020-03-16T11:31:24 IST" duration-ms="4228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method signature="logout()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:31:24 IST" name="logout" finished-at="2020-03-16T11:31:24 IST" depends-on-methods="com.ExpenseOnDemand.TestCases.RegisterClass.RegisterUser" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.ExpenseOnDemand.TestCases.RegisterClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

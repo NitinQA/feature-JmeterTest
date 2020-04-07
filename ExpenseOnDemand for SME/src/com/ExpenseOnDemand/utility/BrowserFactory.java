@@ -11,27 +11,28 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class BrowserFactory {
-	static WebDriver driver;
-	String projectpath=System.getProperty("user.dir");
-	@Parameters("browserName")
-	@BeforeTest
-	public void launchBrowser(String browserName)
-	{
-		System.out.println("The Browser Name is ="+browserName);
+	public static WebDriver driver;
+	static String projectpath=System.getProperty("user.dir");
 
-		if(browserName.equalsIgnoreCase("chrome"))
-		{
+	
+	public static void chromeBrowser()
+	{
+		
+		
 			System.setProperty("webdriver.chrome.driver", projectpath+"\\Drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
-		else if(browserName.equalsIgnoreCase("firefox"))
+	
+	
+	public static void firefoxBrowser()
 		{
 			System.getProperty("user.dir"); System.setProperty("webdriver.gecko.driver",projectpath + "\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 
 
 		}
-		else if(browserName.equalsIgnoreCase("ie"))
+	
+	public static void ieBrowser()
 		{
 			System.setProperty("webdriver.ie.driver", projectpath + "\\Drivers\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
@@ -70,4 +71,3 @@ public class BrowserFactory {
 	 * }
 	 */
 
-}

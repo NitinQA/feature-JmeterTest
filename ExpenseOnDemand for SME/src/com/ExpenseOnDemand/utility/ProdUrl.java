@@ -1,14 +1,15 @@
 package com.ExpenseOnDemand.utility;
 
-public class ProdUrl extends BrowserFactory{
+import org.testng.annotations.Test;
 
+public class ProdUrl extends BrowserFactory{
+@Test
 	public void prodUrl()
 	{
 		
 		driver.get("https://www.expenseondemand.com/loginregister/");
 
 	}
-
 
 	
 	/*

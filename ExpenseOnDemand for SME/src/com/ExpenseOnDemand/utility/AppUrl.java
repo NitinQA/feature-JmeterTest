@@ -2,10 +2,10 @@ package com.ExpenseOnDemand.utility;
 
 public class AppUrl extends BrowserFactory{
 	
-	public void appUrl()
+	public static void appUrl()
 	{
-		driver.get("http://newdev.soloexpenses.com/");
-		
+		driver.get("https://newqa.soloexpenses.com/login");
+		driver.manage().window().maximize();
 		
 	}
 
