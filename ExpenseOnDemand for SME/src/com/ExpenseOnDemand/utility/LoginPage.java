@@ -29,6 +29,8 @@ public class LoginPage extends AppUrl{
 			driver.findElement(By.id("password")).sendKeys(password.get(i));
 			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 			Thread.sleep(6000);
+			
+			//To click on profile icon
 			driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(4) > a > i")).click();
 			driver.findElement(By.xpath("//span[contains(text(),'Logout')]")).click();
 		}

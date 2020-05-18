@@ -1,12 +1,19 @@
 package com.ExpenseOnDemand.TestCases;
 import java.io.IOException;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 
 import com.ExpenseOnDemand.utility.*;
 
 public class ManageEmployee extends NewLogin{
-	
+	static int leftLimit = 97; // letter 'a'
+	static int rightLimit = 122; // letter 'z'
+	static int targetStringLength = 6;
+	static Random random = new Random();
+
+	static String generatedString = random.ints(leftLimit, rightLimit + 1).limit(targetStringLength).collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
+		
 	public static void ManageEmp()
 	{
 		driver.findElement(By.cssSelector("#\\32 ")).click();
@@ -47,9 +54,9 @@ public class ManageEmployee extends NewLogin{
 				e.printStackTrace();
 			}
 		 driver.findElement(By.name("employeeFirstName")).click();
-		 driver.findElement(By.name("employeeFirstName")).sendKeys("autoinvthree");
+		 driver.findElement(By.name("employeeFirstName")).sendKeys(generatedString);
 		 driver.findElement(By.name("employeeEmail")).click();
-		 driver.findElement(By.name("employeeEmail")).sendKeys("autoinv30@yopmail.com");
+		 driver.findElement(By.name("employeeEmail")).sendKeys(generatedString+"@yopmail.com");
 		 
 		 //invite employee
 		 driver.findElement(By.cssSelector("#inviteEmployees > header > div > div > div > div.col-xl-4.col-lg-4.col-md-4.col-sm-4.col-xs-4.padding-right-0.header-icons.text-right > span:nth-child(1) > i")).click();
@@ -61,10 +68,10 @@ public class ManageEmployee extends NewLogin{
 			}
 		 driver.findElement(By.name("employeeFirstName")).click();
 		 driver.findElement(By.name("employeeFirstName")).clear();
-		 driver.findElement(By.name("employeeFirstName")).sendKeys("autoinvfour");
+		 driver.findElement(By.name("employeeFirstName")).sendKeys(generatedString+"new");
 		 driver.findElement(By.name("employeeEmail")).click();
 		 driver.findElement(By.name("employeeEmail")).clear();
-		 driver.findElement(By.name("employeeEmail")).sendKeys("autoinv31@yopmail.com");
+		 driver.findElement(By.name("employeeEmail")).sendKeys(generatedString+"1@yopmail.com");
 		 driver.findElement(By.cssSelector("#inviteEmployees > header > div > div > div > div.col-xl-4.col-lg-4.col-md-4.col-sm-4.col-xs-4.padding-right-0.header-icons.text-right > span:nth-child(2) > i")).click();
 		 
 		 

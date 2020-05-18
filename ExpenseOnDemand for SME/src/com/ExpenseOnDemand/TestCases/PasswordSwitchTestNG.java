@@ -99,7 +99,7 @@ public class PasswordSwitchTestNG  extends AppUrl{
 
 }
 	
-	@AfterClass
+	@AfterMethod
 	public void closeBrowser()
 	{
 		CloseBrowser.quitBrowser();
