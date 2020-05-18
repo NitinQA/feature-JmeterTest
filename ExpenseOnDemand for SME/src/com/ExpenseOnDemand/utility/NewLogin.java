@@ -74,7 +74,7 @@ public class NewLogin extends AppUrl{
 		}
 	public static void logoutApp()
 	{
-		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(3) > a > i")).click();
+		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(4) > a > i")).click();
 		
 	
 		try {

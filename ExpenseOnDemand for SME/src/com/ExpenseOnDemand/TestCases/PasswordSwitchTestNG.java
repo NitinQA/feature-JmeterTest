@@ -40,12 +40,23 @@ public class PasswordSwitchTestNG  extends AppUrl{
 	@Test()
 	public static void passwordOne() //throws IOException, InterruptedException
 	{
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.findElement(By.id("eMail")).clear();
 		driver.findElement(By.id("eMail")).sendKeys("conor@yopmail.com");
 		driver.findElement(By.id("password")).clear();
 
 		driver.findElement(By.id("password")).sendKeys(NewLogin.Password);
-
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 		try {
 			Thread.sleep(10000);
@@ -57,14 +68,24 @@ public class PasswordSwitchTestNG  extends AppUrl{
 
 		ChangePassword.setPasswordOne();
 
-
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	driver.findElement(By.id("eMail")).clear();
 	driver.findElement(By.id("eMail")).sendKeys("conor@yopmail.com");
 	driver.findElement(By.id("password")).clear();
 
 	driver.findElement(By.id("password")).sendKeys(NewLogin.NewPassword);
-
+	try {
+		Thread.sleep(5000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 	try {
 		Thread.sleep(10000);
