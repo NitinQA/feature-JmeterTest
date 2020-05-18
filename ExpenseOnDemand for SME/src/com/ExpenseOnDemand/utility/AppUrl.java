@@ -4,7 +4,9 @@ public class AppUrl extends BrowserFactory{
 	
 	public static void appUrl()
 	{
-		driver.get("https://newqa.soloexpenses.com/login");
+		driver.get("https://qa.expenseondemand.com/");
+
+		//driver.get("https://newqa.soloexpenses.com/login");
 		driver.manage().window().maximize();
 		
 	}

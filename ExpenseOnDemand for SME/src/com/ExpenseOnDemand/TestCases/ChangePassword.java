@@ -33,17 +33,17 @@ public class ChangePassword extends NewLogin{
 		driver.findElement(By.cssSelector("#exisitingPassword")).click();
 		
 		//driver.findElement(By.id("exisitingPassword")).clear();
-		driver.findElement(By.id("exisitingPassword")).sendKeys(NewLogin.NewPassword);
+		driver.findElement(By.id("exisitingPassword")).sendKeys(NewLogin.Password);
 		//driver.findElement(By.id("exisitingPassword")).sendKeys("Aa123456");
 
 		driver.findElement(By.id("newPassword")).click();
 		//driver.findElement(By.id("newPassword")).clear();
-		driver.findElement(By.id("newPassword")).sendKeys(NewLogin.Password);
+		driver.findElement(By.id("newPassword")).sendKeys(NewLogin.NewPassword);
 
 		//driver.findElement(By.id("newPassword")).sendKeys("Aa@123456");
 
 		driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).click();
-		driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys(NewLogin.Password);
+		driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys(NewLogin.NewPassword);
 		//driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys("Aa@123456");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
@@ -86,17 +86,17 @@ public class ChangePassword extends NewLogin{
 
 		driver.findElement(By.cssSelector("#exisitingPassword")).click();
 		//driver.findElement(By.id("exisitingPassword")).clear();
-		driver.findElement(By.id("exisitingPassword")).sendKeys(NewLogin.Password);
+		driver.findElement(By.id("exisitingPassword")).sendKeys(NewLogin.NewPassword);
 		//driver.findElement(By.id("exisitingPassword")).sendKeys("Aa123456");
 
 		driver.findElement(By.id("newPassword")).click();
 		//driver.findElement(By.id("newPassword")).clear();
-		driver.findElement(By.id("newPassword")).sendKeys(NewLogin.NewPassword);
+		driver.findElement(By.id("newPassword")).sendKeys(NewLogin.Password);
 
 		//driver.findElement(By.id("newPassword")).sendKeys("Aa@123456");
 
 		driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).click();
-		driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys(NewLogin.NewPassword);
+		driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys(NewLogin.Password);
 		//driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys("Aa@123456");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
