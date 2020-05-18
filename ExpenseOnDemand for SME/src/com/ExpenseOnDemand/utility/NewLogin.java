@@ -23,18 +23,37 @@ public class NewLogin extends AppUrl{
 		ArrayList<String> password=readExcel(1);
 		for(int i =0;i<username.size();i++)
 		{
-		*/	driver.findElement(By.id("eMail")).clear();
-			driver.findElement(By.id("eMail")).sendKeys("solomar02@yopmail.com");
+		
+		
+		*/	try {
+			Thread.sleep(15000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		driver.findElement(By.id("eMail")).clear();
+			driver.findElement(By.id("eMail")).sendKeys("conor@yopmail.com");
 			driver.findElement(By.id("password")).clear();
 			//To check entering password through string variable
 			
 			
-			driver.findElement(By.id("password")).sendKeys(NewPassword);
+			driver.findElement(By.id("password")).sendKeys(Password);
 			//static Data
 			//driver.findElement(By.id("password")).sendKeys("Aa123456");
 			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 			try {
 				Thread.sleep(15000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			//click on settings icon
+			
+			driver.findElement(By.id("navbarDropdown4")).click();
+			try {
+				Thread.sleep(10000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -59,15 +78,18 @@ public class NewLogin extends AppUrl{
 		
 	
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-				 driver.findElement(By.xpath("//span[contains(text(),'Logout')]")).click();
+		driver.findElement(By.cssSelector("body > app > section > app-nav-menu > div.container-fluid.top-bar.fixed-top > div:nth-child(1) > nav > div.profilePopup.active > ul > li:nth-child(6) > a > p > span.font-weight-bold")).click();
+				 //driver.findElement(By.xpath("//span[contains(text(),'Logout')]")).click();
 	}
 	public static void orgSet()
 	{
+		
+		
 		driver.findElement(By.cssSelector("#place1 > div:nth-child(2) > div > div > div:nth-child(1) > div > div.card-button > button")).click();
 		try {
 			Thread.sleep(12000);
@@ -75,7 +97,9 @@ public class NewLogin extends AppUrl{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.cssSelector("#orgSettings > div > div > div > div.col-md-4.no-padding-right-left > div.row.margin-top-20 > div > div.row.margin-top-20 > div.col-md-8.no-padding-right-left > div > button > span")).click();
+		
+		//click on setup
+		driver.findElement(By.cssSelector("body > app > section > app-addtocartfuntion > div.container-fluid.padding-LR-15 > section.pageTitle-block.margin-top-5 > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li:nth-child(2) > button > span > i")).click();
 		try {
 			Thread.sleep(12000);
 		} catch (InterruptedException e) {
@@ -92,12 +116,23 @@ public class NewLogin extends AppUrl{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.cssSelector("#manageEmployee > section.pageTitle-block > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li:nth-child(1) > button > span > app-save-icon > i")).click();
 		
+		//click on save
+		driver.findElement(By.cssSelector("#manageEmployee > section.pageTitle-block > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li:nth-child(1) > button > span > app-save-icon > i")).click();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
-	  public static void main(String[] args) { NewLogin lg=new NewLogin();
-	  lg.chromeBrowser(); lg.appUrl(); lg.loginCredentials(); lg.orgSet();
+	  public static void main(String[] args) {
+		  NewLogin lg=new NewLogin();
+	  lg.chromeBrowser(); 
+	  lg.appUrl();
+	  lg.loginCredentials();
+	  lg.orgSet();
 	  lg.logoutApp();
 	  
 	  }

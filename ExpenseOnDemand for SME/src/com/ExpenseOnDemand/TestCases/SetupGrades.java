@@ -3,11 +3,17 @@ package com.ExpenseOnDemand.TestCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.By;
 import java.io.IOException;
-
-
+import java.util.Random;
 
 import com.ExpenseOnDemand.utility.*;
 public class SetupGrades extends NewLogin{
+	static int leftLimit = 97; // letter 'a'
+	static int rightLimit = 122; // letter 'z'
+	static int targetStringLength = 4;
+	static Random random = new Random();
+
+	static String generatedString = random.ints(leftLimit, rightLimit + 1).limit(targetStringLength).collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();
+		
 	public static void gradeSetup()
 	{
 		driver.findElement(By.cssSelector("#\\32 ")).click();
@@ -43,7 +49,7 @@ public class SetupGrades extends NewLogin{
 	}
 	
 	driver.findElement(By.name("gradeName")).click();
-	driver.findElement(By.name("gradeName")).sendKeys("Admin Automate");
+	driver.findElement(By.name("gradeName")).sendKeys(generatedString+"AutomateGrade");
 	driver.findElement(By.name("gradeDescription")).click();
 	driver.findElement(By.name("gradeDescription")).sendKeys("This is for automation");
 	driver.findElement(By.cssSelector("#addGradePanel > header > div > div > div > div.col-xl-4.col-lg-4.col-md-4.col-sm-4.col-xs-4.padding-right-0.header-icons.text-right > span:nth-child(1) > i")).click();

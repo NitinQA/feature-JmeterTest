@@ -11,7 +11,7 @@ import com.ExpenseOnDemand.utility.BrowserFactory;
 import com.ExpenseOnDemand.utility.CloseBrowser;
 import com.ExpenseOnDemand.utility.NewLogin;
 
-public class setCurrencyTestNG {
+public class ExportTestNG {
 	@BeforeClass
 	public void browser() {
 
@@ -23,17 +23,12 @@ public class setCurrencyTestNG {
 	public void appLaunch() {
 		AppUrl.appUrl();
 	}
-	/*
-	 * @Test(priority=1) public void loginApp() { NewLogin.loginCredentials(); }
-	 */
 	
-	//@Test(priority=2, dependsOnMethods="loginApp")
 	@Test
-	public void currencySet()
+	public void exportRecord()
 	{
-		NewLogin.loginCredentials();
 		
-		SetCurrency.currencyChange();
+		ExportData.dataExport();
 	}
 	@AfterMethod
 	public void logotUser()
@@ -45,5 +40,6 @@ public class setCurrencyTestNG {
 	{
 		CloseBrowser.quitBrowser();
 	}
+
 
 }

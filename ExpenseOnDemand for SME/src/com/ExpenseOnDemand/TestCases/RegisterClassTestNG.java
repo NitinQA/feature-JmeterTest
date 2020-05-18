@@ -1,14 +1,17 @@
 package com.ExpenseOnDemand.TestCases;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ExpenseOnDemand.utility.AppUrl;
 import com.ExpenseOnDemand.utility.BrowserFactory;
+import com.ExpenseOnDemand.utility.CloseBrowser;
 import com.ExpenseOnDemand.utility.NewLogin;
 
-public class RegisterClass {
+public class RegisterClassTestNG {
 	@BeforeClass
 	public void browser() {
 
@@ -24,13 +27,18 @@ public class RegisterClass {
 	@Test
 	public void RegisterUser()
 	{
-		RegisterApp.RegisterApp();
+		RegisterApp.RegiApp();
 	}
-	@Test(dependsOnMethods="RegisterUser")
 	
+	@AfterMethod
 		public void logout()
 		{
 			NewLogin.logoutApp();
 		}
-	
+	@AfterClass
+	public void closeBrowser()
+	{
+		CloseBrowser.quitBrowser();
+	}
+
 }
