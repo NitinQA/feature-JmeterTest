@@ -40,7 +40,9 @@ public class NewLogin extends AppUrl{
 			driver.findElement(By.id("password")).sendKeys(Password);
 			//static Data
 			//driver.findElement(By.id("password")).sendKeys("Aa123456");
-			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+			//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+			driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form.w-100pc.ng-dirty.ng-touched.ng-valid > div > div > div > div.margin-top-5.btn-login > button")).click();
+
 			try {
 				Thread.sleep(15000);
 			} catch (InterruptedException e) {
