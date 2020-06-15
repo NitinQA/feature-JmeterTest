@@ -22,7 +22,9 @@ public class ExportData extends AppUrl {
 		driver.findElement(By.id("password")).sendKeys("Aa123456");
 		//static Data
 		//driver.findElement(By.id("password")).sendKeys("Aa123456");
-		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form:nth-child(1) > div > div > div > div.margin-top-5.btn-login > button")).click();
+
 		
 		try {
 			Thread.sleep(10000);
@@ -84,6 +86,7 @@ public class ExportData extends AppUrl {
 	
 	driver.findElement(By.cssSelector("#manageEmployee > section.row.padding-bottom-20 > div > div.row.margin-top-20 > div.col-md-11.padding-right-0 > div:nth-child(1) > div.col-md-6.padding-left-0 > div > div.col-md-6.no-padding-right-left")).click();
 	//driver.findElement(By.xpath("//input[@class='form-control has-value ng-untouched ng-pristine ng-valid input']")).click();
+	
 	//to set 2019
 	
 	driver.findElement(By.cssSelector("body > div.flatpickr-calendar.animate.showTimeInput.arrowTop.open > div.flatpickr-months > div > div > div > span.arrowDown")).click();

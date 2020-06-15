@@ -19,6 +19,7 @@ public class DeleteData extends NewLogin {
 			e.printStackTrace();
 		}
 		//clicking on setup icon
+		
 		driver.findElement(By.cssSelector("body > app > section > app-addtocartfuntion > div.container-fluid.padding-LR-15 > section.pageTitle-block.margin-top-5 > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li.btn-default.padding-left-0 > button > span > i")).click();
 
 		//driver.findElement(By.cssSelector("body > app > section > app-addtocartfuntion > div.container-fluid.padding-LR-15 > section.pageTitle-block.margin-top-5 > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li:nth-child(2) > button > span > i")).click();
@@ -28,7 +29,9 @@ public class DeleteData extends NewLogin {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.cssSelector("#delete-test-data > ul > li:nth-child(1) > div.w-2pc.float-left > input[type=checkbox]")).click();
+		driver.findElement(By.cssSelector("#delete-test-data > ul > li:nth-child(1) > div.w-point5pc.float-left > input[type=checkbox]")).click();
+		
+		
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

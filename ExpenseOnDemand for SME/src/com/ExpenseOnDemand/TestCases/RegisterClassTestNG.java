@@ -29,16 +29,6 @@ public class RegisterClassTestNG {
 	{
 		RegisterApp.RegiApp();
 	}
-	
-	@AfterMethod
-		public void logout()
-		{
-			NewLogin.logoutApp();
-		}
-	@AfterClass
-	public void closeBrowser()
-	{
-		CloseBrowser.quitBrowser();
-	}
+
 
 }

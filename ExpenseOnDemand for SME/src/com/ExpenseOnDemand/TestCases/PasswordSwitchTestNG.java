@@ -57,7 +57,9 @@ public class PasswordSwitchTestNG  extends AppUrl{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form:nth-child(1) > div > div > div > div.margin-top-5.btn-login > button")).click();
+
 		try {
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
@@ -86,7 +88,9 @@ public class PasswordSwitchTestNG  extends AppUrl{
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+	//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+	driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form:nth-child(1) > div > div > div > div.margin-top-5.btn-login > button")).click();
+
 	try {
 		Thread.sleep(10000);
 	} catch (InterruptedException e) {

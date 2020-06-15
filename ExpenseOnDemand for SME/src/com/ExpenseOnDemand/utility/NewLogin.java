@@ -41,7 +41,7 @@ public class NewLogin extends AppUrl{
 			//static Data
 			//driver.findElement(By.id("password")).sendKeys("Aa123456");
 			//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
-			driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form.w-100pc.ng-dirty.ng-touched.ng-valid > div > div > div > div.margin-top-5.btn-login > button")).click();
+			driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form:nth-child(1) > div > div > div > div.margin-top-5.btn-login > button")).click();
 
 			try {
 				Thread.sleep(15000);
@@ -76,7 +76,7 @@ public class NewLogin extends AppUrl{
 		}
 	public static void logoutApp()
 	{
-		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(4) > a > i")).click();
+		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(3) > a > i")).click();
 		
 	
 		try {
@@ -101,9 +101,10 @@ public class NewLogin extends AppUrl{
 		}
 		
 		//click on setup
-		driver.findElement(By.cssSelector("body > app > section > app-addtocartfuntion > div.container-fluid.padding-LR-15 > section.pageTitle-block.margin-top-5 > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li:nth-child(2) > button > span > i")).click();
+		driver.findElement(By.cssSelector("body > app > section > app-addtocartfuntion > div.container-fluid.padding-LR-15 > section.pageTitle-block.margin-top-5 > div > div > div.col-md-6.text-right.padding-right-0 > div > ul > li.btn-default.padding-left-0 > button > span > i")).click();
+		
 		try {
-			Thread.sleep(12000);
+			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -111,7 +112,7 @@ public class NewLogin extends AppUrl{
 		
 		//driver.findElement(By.id("orgName")).click();
 		driver.findElement(By.id("orgName")).clear();
-		driver.findElement(By.id("orgName")).sendKeys("Test Automation");
+		driver.findElement(By.id("orgName")).sendKeys("Test Automation New");
 		try {
 			Thread.sleep(6000);
 		} catch (InterruptedException e) {
