@@ -15,12 +15,14 @@ public class BrowserFactory {
 	static String projectpath=System.getProperty("user.dir");
 
 	
+	
 	public static void chromeBrowser()
 	{
 		
-		
+	
 			System.setProperty("webdriver.chrome.driver", projectpath+"\\Drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
+			
 		}
 	
 	

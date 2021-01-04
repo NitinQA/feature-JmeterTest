@@ -27,7 +27,8 @@ public class LoginPage extends AppUrl{
 			driver.findElement(By.id("eMail")).sendKeys(username.get(i));
 			//driver.findElement(By.id("Password")).clear();
 			driver.findElement(By.id("password")).sendKeys(password.get(i));
-			driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+			driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form.w-100pc.ng-dirty.ng-touched.ng-valid > div > div > div > div.margin-top-5.btn-login > button")).click();
+			//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 			Thread.sleep(6000);
 			
 			//To click on profile icon
@@ -53,8 +54,6 @@ public class LoginPage extends AppUrl{
 		}
 		System.out.println("List is =" +list);
 		return list;
-
-
 	}
 
 	/*public static void main(String[] args) 

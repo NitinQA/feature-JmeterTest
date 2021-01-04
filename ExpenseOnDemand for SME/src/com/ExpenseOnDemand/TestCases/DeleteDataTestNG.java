@@ -33,6 +33,12 @@ public class DeleteDataTestNG {
 	@AfterMethod
 	public void logotUser()
 	{
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		NewLogin.logoutApp();
 	}
 	@AfterClass

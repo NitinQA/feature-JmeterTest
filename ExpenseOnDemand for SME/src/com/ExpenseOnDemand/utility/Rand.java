@@ -4,7 +4,7 @@ public class Rand {
 
 
 
-	public static void username() {
+public static CharSequence[] username() {
 		int leftLimit = 97; // letter 'a'
 		int rightLimit = 122; // letter 'z'
 		int targetStringLength = 5;
@@ -14,6 +14,7 @@ public class Rand {
 			
 
 		System.out.println(generatedString);
+		return null;
 	}
 
 

@@ -1,5 +1,6 @@
 package com.ExpenseOnDemand.TestCases;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 
@@ -10,19 +11,23 @@ public class ChangePassword extends NewLogin{
 	public static void setPasswordOne()
 	{
 		//To click on profile icon
-		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(4) > a > i")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+		//To click on profile icon
+		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(5) > a > i")).click();
 		
-		try { Thread.sleep(10000); } catch (InterruptedException e) { //TODO		  Auto-generated catch block
-			e.printStackTrace(); }
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { //TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 
 
 
 		driver.findElement(By.xpath("//span[contains(text(), 'Change Password')]")).click(); 
-		try { 
-			Thread.sleep(10000); }
-		catch (InterruptedException e) { 
-			//TODO Auto-generated catch block
-			e.printStackTrace(); }
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { //TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 
 		//driver.findElement(By.id("exisitingPassword")).click();
 		//driver.findElement(By.xpath("//input[@formcontrolname='exisitingPassword']")).click();
@@ -47,37 +52,34 @@ public class ChangePassword extends NewLogin{
 		//driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys("Aa@123456");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 
 		//driver.switchTo().alert();
-
-		//driver.findElement(By.xpath("//button[contains(text(),'Ok')]")).click();
-		driver.findElement(By.cssSelector("body > app > section > app-change-password > div.modal.fade.show.active > div > div > div.modal-footer > button")).click();
+       //click on OK
+		
+		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
+		//driver.findElement(By.className("btn btn-primary")).click();
+		//driver.findElement(By.cssSelector("#rightSideBar > div > div.col-md-12.margin-top-0.no-padding-right-left > div > div > p > button")).click();
 	}
 	public static void setPasswordTwo()
 	{
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
 		//To click on profile icon
-		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(4) > a > i")).click();
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		driver.findElement(By.cssSelector("#navbarSupportedContent > ul.navbar-nav2 > li:nth-child(5) > a > i")).click();
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 
 		driver.findElement(By.xpath("//span[contains(text(), 'Change Password')]")).click();
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 		//driver.findElement(By.id("exisitingPassword")).click();
 		//driver.findElement(By.xpath("//input[@formcontrolname='exisitingPassword']")).click();
 		//driver.switchTo().frame("exisitingPassword");
@@ -100,18 +102,23 @@ public class ChangePassword extends NewLogin{
 		//driver.findElement(By.xpath("//input[@formcontrolname='confirmPassword']")).sendKeys("Aa@123456");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 
 
 		//driver.switchTo().alert();
 
 		//driver.findElement(By.xpath("//button[contains(text(),'Ok')]")).click();
-		driver.findElement(By.cssSelector("body > app > section > app-change-password > div.modal.fade.show.active > div > div > div.modal-footer > button")).click();
+		//driver.findElement(By.cssSelector("body > app > section > app-change-password > div.modal.fade.show.active > div > div > div.modal-footer > button")).click();
+
+		//click on OK
+		
+		driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
+
+		//driver.findElement(By.cssSelector("#rightSideBar > div > div.col-md-12.margin-top-0.no-padding-right-left > div > div > p > button")).click();
+
 	}
 	public static void main(String[] args) {
 		ChangePassword password=new ChangePassword();

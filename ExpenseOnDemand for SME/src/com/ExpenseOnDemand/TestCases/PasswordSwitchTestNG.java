@@ -4,6 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -11,7 +13,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
@@ -39,65 +41,67 @@ public class PasswordSwitchTestNG  extends AppUrl{
 	}
 	@Test()
 	public static void passwordOne() //throws IOException, InterruptedException
-	{
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	
+		
+		
+		{
+		/*
+		 * try { Thread.sleep(6000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+			driver.findElement(By.id("eMail")).clear();
+			driver.findElement(By.id("eMail")).sendKeys("conor100@yopmail.com");
+			driver.findElement(By.id("password")).click();
+			driver.findElement(By.id("password")).clear();
+
+			driver.findElement(By.id("password")).sendKeys(NewLogin.Password);
+		/*
+		 * try { Thread.sleep(5000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
+			//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+			driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form:nth-child(1) > div > div > div > div.margin-top-5.btn-login > button")).click();
+
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace();
+		 * 
+		 * }
+		 */
+
+			ChangePassword.setPasswordOne();
+
+		/*
+		 * try { Thread.sleep(10000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
 		driver.findElement(By.id("eMail")).clear();
-		driver.findElement(By.id("eMail")).sendKeys("conor@yopmail.com");
+		driver.findElement(By.id("eMail")).sendKeys("conor100@yopmail.com");
+		driver.findElement(By.id("password")).click();
 		driver.findElement(By.id("password")).clear();
 
-		driver.findElement(By.id("password")).sendKeys(NewLogin.Password);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		driver.findElement(By.id("password")).sendKeys(NewLogin.NewPassword);
+		/*
+		 * try { Thread.sleep(5000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
+		//driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		driver.findElement(By.cssSelector("#setting-wizard-new > div.setting-page > div.right-side-wizard > form:nth-child(1) > div > div > div > div.margin-top-5.btn-login > button")).click();
 
-		}
+		/*
+		 * try { Thread.sleep(6000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace();
+		 * 
+		 * }
+		 */
 
-		ChangePassword.setPasswordOne();
-
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	driver.findElement(By.id("eMail")).clear();
-	driver.findElement(By.id("eMail")).sendKeys("conor@yopmail.com");
-	driver.findElement(By.id("password")).clear();
-
-	driver.findElement(By.id("password")).sendKeys(NewLogin.NewPassword);
-	try {
-		Thread.sleep(5000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-	driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
-	try {
-		Thread.sleep(10000);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		ChangePassword.setPasswordTwo();
 
 	}
-
-	ChangePassword.setPasswordTwo();
-
-}
 	
 	@AfterMethod
 	public void closeBrowser()

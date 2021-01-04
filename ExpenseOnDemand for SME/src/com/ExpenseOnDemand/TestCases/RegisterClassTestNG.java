@@ -28,17 +28,24 @@ public class RegisterClassTestNG {
 	public void RegisterUser()
 	{
 		RegisterApp.RegiApp();
-	}
-	
-	@AfterMethod
-		public void logout()
-		{
-			NewLogin.logoutApp();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		BasicMileage.mileageRate();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	@AfterClass
 	public void closeBrowser()
 	{
 		CloseBrowser.quitBrowser();
 	}
-
 }

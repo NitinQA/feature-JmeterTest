@@ -1,33 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-16T11:30:11 IST" name="Default suite" finished-at="2020-03-16T11:31:24 IST" duration-ms="73696">
+  <suite started-at="2021-01-04T16:27:12 IST" name="Default suite" finished-at="2021-01-04T16:28:05 IST" duration-ms="53509">
     <groups>
     </groups>
-    <test started-at="2020-03-16T11:30:11 IST" name="Default test" finished-at="2020-03-16T11:31:24 IST" duration-ms="73696">
-      <class name="com.ExpenseOnDemand.TestCases.RegisterClass">
-        <test-method is-config="true" signature="browser()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:30:11 IST" name="browser" finished-at="2020-03-16T11:30:18 IST" duration-ms="7010" status="PASS">
+    <test started-at="2021-01-04T16:27:12 IST" name="Default test" finished-at="2021-01-04T16:28:05 IST" duration-ms="53509">
+      <class name="com.ExpenseOnDemand.TestCases.ExportTestNG">
+        <test-method is-config="true" signature="browser()[pri:0, instance:com.ExpenseOnDemand.TestCases.ExportTestNG@79efed2d]" started-at="2021-01-04T16:27:12 IST" name="browser" finished-at="2021-01-04T16:27:16 IST" duration-ms="3749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:30:18 IST" name="appLaunch" finished-at="2020-03-16T11:30:31 IST" duration-ms="13393" status="PASS">
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.ExpenseOnDemand.TestCases.ExportTestNG@79efed2d]" started-at="2021-01-04T16:27:16 IST" name="appLaunch" finished-at="2021-01-04T16:27:19 IST" duration-ms="3688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLaunch -->
-        <test-method signature="RegisterUser()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:30:31 IST" name="RegisterUser" finished-at="2020-03-16T11:31:20 IST" duration-ms="48628" status="PASS">
+        <test-method signature="exportRecord()[pri:0, instance:com.ExpenseOnDemand.TestCases.ExportTestNG@79efed2d]" started-at="2021-01-04T16:27:19 IST" name="exportRecord" finished-at="2021-01-04T16:28:04 IST" duration-ms="44932" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#rightSideBar > div > div.block.no-padding-top-bottom > div > div > div > ul > li > span:nth-child(2) > a > i"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Automation', ip: '172.16.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\qaadmin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8a5262f57d16bca49140a248cd64595
+*** Element info: {Using=css selector, value=#rightSideBar > div > div.block.no-padding-top-bottom > div > div > div > ul > li > span:nth-child(2) > a > i}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#rightSideBar > div > div.block.no-padding-top-bottom > div > div > div > ul > li > span:nth-child(2) > a > i"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Automation', ip: '172.16.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\qaadmin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8a5262f57d16bca49140a248cd64595
+*** Element info: {Using=css selector, value=#rightSideBar > div > div.block.no-padding-top-bottom > div > div > div > ul > li > span:nth-child(2) > a > i}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.ExpenseOnDemand.TestCases.ExportData.dataExport(ExportData.java:140)
+at com.ExpenseOnDemand.TestCases.ExportTestNG.exportRecord(ExportTestNG.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterUser -->
-        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:31:20 IST" name="appLaunch" finished-at="2020-03-16T11:31:24 IST" duration-ms="4228" status="PASS">
+        </test-method> <!-- exportRecord -->
+        <test-method is-config="true" signature="logotUser()[pri:0, instance:com.ExpenseOnDemand.TestCases.ExportTestNG@79efed2d]" started-at="2021-01-04T16:28:04 IST" name="logotUser" finished-at="2021-01-04T16:28:05 IST" duration-ms="1095" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i _ngcontent-jpd-c48="" class="fas fa-user-circle f-25" aria-hidden="true"></i> is not clickable at point (1339, 24). Other element would receive the click: <i _ngcontent-jpd-c172="" data-toggle="tooltip" placement="left" data-placement="left" aria-hidden="true" class="fal fa-times-circle color-white closeRightSlider"></i>
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Automation', ip: '172.16.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\qaadmin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8a5262f57d16bca49140a248cd64595]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i _ngcontent-jpd-c48="" class="fas fa-user-circle f-25" aria-hidden="true"></i> is not clickable at point (1339, 24). Other element would receive the click: <i _ngcontent-jpd-c172="" data-toggle="tooltip" placement="left" data-placement="left" aria-hidden="true" class="fal fa-times-circle color-white closeRightSlider"></i>
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Automation', ip: '172.16.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\qaadmin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50035}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d8a5262f57d16bca49140a248cd64595
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.ExpenseOnDemand.utility.NewLogin.logoutApp(NewLogin.java:112)
+at com.ExpenseOnDemand.TestCases.ExportTestNG.logotUser(ExportTestNG.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- appLaunch -->
-        <test-method signature="logout()[pri:0, instance:com.ExpenseOnDemand.TestCases.RegisterClass@7692d9cc]" started-at="2020-03-16T11:31:24 IST" name="logout" finished-at="2020-03-16T11:31:24 IST" depends-on-methods="com.ExpenseOnDemand.TestCases.RegisterClass.RegisterUser" duration-ms="295" status="PASS">
+        </test-method> <!-- logotUser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.ExpenseOnDemand.TestCases.ExportTestNG@79efed2d]" started-at="2021-01-04T16:28:05 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1609757885963" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- com.ExpenseOnDemand.TestCases.RegisterClass -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.ExpenseOnDemand.TestCases.ExportTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -45,6 +45,12 @@ public class OrgSetupTestNG {
 			e.printStackTrace();
 		}
 		NewLogin.orgSet();
+		try {
+			Thread.sleep(12000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	@AfterMethod
 	public void logotUser()

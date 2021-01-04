@@ -28,19 +28,21 @@ public class ManageEmpTestNG {
 	{
 		NewLogin.loginCredentials();
 		try {
-			Thread.sleep(12000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		ManageEmployee.ManageEmp();
-		try {
-			Thread.sleep(12000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		/*
+		 * try { Thread.sleep(12000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 		ManageEmployee.inviteEmp();
+		/*
+		 * try { Thread.sleep(12000); } catch (InterruptedException e) { // TODO
+		 * Auto-generated catch block e.printStackTrace(); }
+		 */
 	}
 	@AfterMethod
 	public void logotUser()

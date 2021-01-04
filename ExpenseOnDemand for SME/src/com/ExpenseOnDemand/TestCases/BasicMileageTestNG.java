@@ -29,13 +29,20 @@ public class BasicMileageTestNG {
 	{
 		NewLogin.loginCredentials();
 		
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		  try { Thread.sleep(10000); } catch (InterruptedException e) {
+			  // TODO		  Auto-generated catch block 
+			  e.printStackTrace(); }
+		 
 		BasicMileage.setupMileage();
+		 try { Thread.sleep(5000); } catch (InterruptedException e) {
+			  // TODO		  Auto-generated catch block 
+			  e.printStackTrace(); }
+		 
+		 BasicMileage.assignVehicle();
+		 try { Thread.sleep(5000); } catch (InterruptedException e) {
+			  // TODO		  Auto-generated catch block 
+			  e.printStackTrace(); }
 	}
 	@AfterMethod
 	public void logotUser()
